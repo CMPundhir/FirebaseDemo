@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ll1"
+        app:cardUseCompatPadding="true"
+        android:minWidth="250dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:minWidth="250dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/userId"
+                android:textColor="#2E2E2E"
+                android:hint="userId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/msg"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:hint="Message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tm"
+                android:textColor="#FF9800"
+                android:textStyle="italic"
+                android:textSize="11dp"
+                android:layout_gravity="end"
+                android:text="time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ll2"
+        android:visibility="gone"
+        android:layout_gravity="end"
+        app:cardUseCompatPadding="true"
+        android:minWidth="250dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:minWidth="250dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/userId2"
+                android:textColor="#2E2E2E"
+                android:hint="userId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/msg2"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:hint="Message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tm2"
+                android:textColor="#FF9800"
+                android:textStyle="italic"
+                android:textSize="11dp"
+                android:layout_gravity="end"
+                android:text="time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</FrameLayout>
