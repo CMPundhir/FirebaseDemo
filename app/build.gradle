@@ -36,5 +36,5 @@ dependencies {
     implementation 'com.google.firebase:firebase-core:16.0.9'
     implementation 'com.facebook.android:facebook-login:5.0.1'
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
-
+    implementation 'com.firebaseui:firebase-ui-storage:4.3.1'
 }

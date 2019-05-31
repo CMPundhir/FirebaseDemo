@@ -15,12 +15,14 @@
 
 
     <LinearLayout
-        android:background="#B4FFFFFF"
+        android:id="@+id/ll2"
+        android:background="#D8FFFFFF"
         android:gravity="bottom"
         android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <ImageButton
             android:id="@+id/imgBtn"
             android:src="@android:drawable/ic_menu_camera"
@@ -52,6 +54,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView"
         app:layout_constraintVertical_bias="0.0" />
+    <ImageView
+        android:background="#A9FFFFFF"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:id="@+id/showImg"
+        android:src="@drawable/bg"
+        android:scaleType="centerInside"
+        android:layout_above="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
 
-
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progressBar"
+        android:indeterminateTint="#C8D366"
+        android:layout_centerInParent="true"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
 </RelativeLayout>
