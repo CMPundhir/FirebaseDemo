@@ -6,6 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <androidx.cardview.widget.CardView
+        app:cardUseCompatPadding="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/username"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_vertical"
+            android:text="username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageButton
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:id="@+id/profBtn"
+            android:src="@drawable/ic_account_circle_black_24dp"
+            android:layout_gravity="end"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+    </androidx.cardview.widget.CardView>
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"

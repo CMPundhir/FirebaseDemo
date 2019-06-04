@@ -72,6 +72,8 @@ public class MainActivity extends AppCompatActivity {
     Bitmap bitmap=null;
     ProgressBar progressBar;
     ImageView showImg;
+    TextView usernameTxt;
+    ImageButton profBtn;
     private StorageReference mStorageRef;
     List<Message> messagesList = new ArrayList<>();
     private static String[] PERMISSIONS_STORAGE = {
@@ -86,6 +88,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         getSupportActionBar().hide();
+        profBtn = findViewById(R.id.profBtn);
+        usernameTxt = findViewById(R.id.username);
+
         imgBtn = findViewById(R.id.imgBtn);
         editText = findViewById(R.id.editText);
         btn = findViewById(R.id.button2);
@@ -165,6 +170,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
 
+            }
+        });
+
+        usernameTxt.setText(firebaseUser.getEmail());
+        profBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,MyProfileActivity.class);
+                startActivity(intent);
             }
         });
     }

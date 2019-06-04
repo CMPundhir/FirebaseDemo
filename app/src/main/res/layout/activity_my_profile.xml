@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyProfileActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:scaleType="centerCrop"
+            android:src="@android:color/holo_blue_light"
+            android:layout_alignParentTop="true"
+            android:id="@+id/profileImg"
+            android:layout_width="match_parent"
+            android:layout_height="250dp" />
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/progressBar"
+            android:layout_centerInParent="true"
+            android:indeterminateTint="#f00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/editBtn"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:src="@android:drawable/ic_menu_edit"
+        android:layout_alignParentEnd="true"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/rl"
+        app:cardUseCompatPadding="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="User Name "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:text="cmpundhir@gmail.com"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:textColor="#fff"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:id="@+id/logoutBtn"
+        android:layout_alignParentBottom="true"
+        android:text="Log Out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
